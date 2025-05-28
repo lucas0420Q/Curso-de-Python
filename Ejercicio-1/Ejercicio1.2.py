@@ -10,8 +10,8 @@ palabras = frase.split(" ")
 cantidad_palabras = len(palabras)
 
 # Calcular la cantidad de letras en la frase
-velocidad_que_habla = cantidad_palabras / 2
-velocidad_que_habla_dalto = (cantidad_palabras * 100 // 2 * 1.5) / 100
+velocidad_que_habla = round(len(frase) / 3, 2)
+velocidad_que_habla_dalto = round(cantidad_palabras / 3, 2)
 
 if cantidad_palabras > 120:
     print("----------------------------------------------------------------")

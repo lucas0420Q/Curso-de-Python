@@ -10,17 +10,17 @@ crudo_prom = 5
 crudo_dalto = 3.5
 
 # Calculando la diferencia entre el curso de Dalto y los otros cursos (Ejercicio A)
-diferencia_con_min = 100 - (dalto_curso / otros_cursos_min * 100)
-diferencia_con_max = 100 - (dalto_curso * 1000 // otros_cursos_max / 10)
-diferencia_con_prom = 100 - (dalto_curso / otros_cursos_prom * 100)
+diferencia_con_min = round(100 - (dalto_curso / otros_cursos_min * 100), 2)
+diferencia_con_max = round(100 - (dalto_curso / otros_cursos_max * 100), 2)
+diferencia_con_prom = round(100 - (dalto_curso / otros_cursos_prom * 100), 2)
 
 # Calculando el porcentaje de tiempo vacio (Ejercicio B)
-tiempo_vacio_prom = 100 - (otros_cursos_prom * 1000 // crudo_prom / 10)
-tiempo_vacio_dalto = 100 - (dalto_curso * 1000 // crudo_dalto / 10)
+tiempo_vacio_prom = round(100 - (otros_cursos_prom / crudo_prom * 100), 2)
+tiempo_vacio_dalto = round(100 - (dalto_curso / crudo_dalto * 100), 2)
 
 # Calcular la diferencia si los cursos duraran 10 horas
-curso_10_horas = otros_cursos_prom * 100 // dalto_curso / 10
-curso_10_horas_dalto = dalto_curso * 100 // otros_cursos_prom / 10
+curso_10_horas = round(otros_cursos_prom / dalto_curso * 100, 2)
+curso_10_horas_dalto = round(dalto_curso / otros_cursos_prom * 100, 2)
 
 # Mostrando la diferencia entre el curso de Dalto y los otros cursos (Ejercicio A)
 # Dividir las respuestas
